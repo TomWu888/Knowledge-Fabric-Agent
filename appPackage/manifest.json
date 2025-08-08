@@ -1,0 +1,66 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.21/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.21",
+    "version": "1.0.0",
+    "id": "${{TEAMS_APP_ID}}",
+    "developer": {
+        "name": "My App, Inc.",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/privacy",
+        "termsOfUseUrl": "https://www.example.com/termofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Knowledge Fabric Agent${{APP_NAME_SUFFIX}}",
+        "full": "full name for Knowledge Fabric Agent"
+    },
+    "description": {
+        "short": "short description for Knowledge Fabric Agent",
+        "full": "full description for Knowledge Fabric Agent"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "${{BOT_ID}}",
+            "scopes": [
+                "team",
+                "groupChat",
+                "personal"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Solve the equation: 3x + 11= 14",
+                            "description": "Help me solve the equation: 3x + 11= 14"
+                        },
+                        {
+                            "title": "The weather of San Francisco",
+                            "description": "The weather of San Francisco"
+                        },
+                        {
+                            "title": "查詢 X 推文資訊",
+                            "description": "查詢 Fabric 知識庫中的 X 推文相關資訊"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}

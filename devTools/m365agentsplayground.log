@@ -1,0 +1,37 @@
+debug Telemetry: agents-playground-cli/cliStart {"cleanProperties":{"isExec":"false","argv":"<REDACTED: user-file-path>,<REDACTED: user-file-path>,start"}}
+
+log Listening on 56150
+log Microsoft 365 Agents Playground is being launched for you to debug the app: http://localhost:56150
+debug started web socket client
+debug started web socket client
+log Waiting for connection of endpoint: http://127.0.0.1:3978/api/messages
+log waiting for 1 resources: http://127.0.0.1:3978/api/messages
+log wait-on(26472) Timed out waiting for: http://127.0.0.1:3978/api/messages; exiting with error
+debug Telemetry: agents-playground-server/error {"cleanProperties":{"stack":"\"Error: Timed out waiting for: http:<REDACTED: user-file-path>:3978/api/messages\\n    at <REDACTED: user-file-path>:2:1636523\\n    at doInnerSub (<REDACTED: user-file-path>:2:2862932)\\n    at outerNext (<REDACTED: user-file-path>:2:2862784)\\n    at OperatorSubscriber._this._next (<REDACTED: user-file-path>:2:2984012)\\n    at Subscriber.next (<REDACTED: user-file-path>:5:880948)\\n    at AsyncAction.<anonymous> (<REDACTED: user-file-path>:5:951695)\\n    at AsyncAction._execute (<REDACTED: user-file-path>:2:379403)\\n    at AsyncAction.execute (<REDACTED: user-file-path>:2:379176)\\n    at AsyncScheduler.flush (<REDACTED: user-file-path>:5:239529)\\n    at listOnTimeout (node:internal/timers:569:17)\"","message":"\"Timed out waiting for: http:<REDACTED: user-file-path>:3978/api/messages\""}}
+
+debug Telemetry: agents-playground-server/getConfig {"cleanProperties":{"internalConfig":"{\"locale\":\"zh-TW\",\"localTimezone\":\"Asia/Taipei\",\"channelId\":\"msteams\"}"}}
+
+debug Telemetry: agents-playground-server/error {"cleanProperties":{"stack":"\"Error: connect ECONNREFUSED 127.0.0.1:3978\\n    at exports.UserBotError (<REDACTED: user-file-path>:2:1403605)\\n    at InstallationUserBotAccessor.handleAxiosError (<REDACTED: user-file-path>:2:2381454)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n    at async InstallationUserBotAccessor.sendActivity (<REDACTED: user-file-path>:2:2380716)\\n    at async InstallationUserBotAccessor.sendInstallationUpdateActivity (<REDACTED: user-file-path>:2:2317681)\"","message":"\"connect ECONNREFUSED 127.0.0.1:3978\"","code":"\"UserBotError\""}}
+
+log InternalServiceError: connect ECONNREFUSED 127.0.0.1:3978
+    at exports.UserBotError (C:\Users\K748\.fx\bin\testTool\0.2.16\node_modules\@microsoft\teams-app-test-tool\dist\index.js:2:1403605)
+    at InstallationUserBotAccessor.handleAxiosError (C:\Users\K748\.fx\bin\testTool\0.2.16\node_modules\@microsoft\teams-app-test-tool\dist\index.js:2:2381454)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstallationUserBotAccessor.sendActivity (C:\Users\K748\.fx\bin\testTool\0.2.16\node_modules\@microsoft\teams-app-test-tool\dist\index.js:2:2380716)
+    at async InstallationUserBotAccessor.sendInstallationUpdateActivity (C:\Users\K748\.fx\bin\testTool\0.2.16\node_modules\@microsoft\teams-app-test-tool\dist\index.js:2:2317681) {
+  code: 'UserBotError',
+  innerHttpError: undefined
+}
+debug Telemetry: agents-playground-server/error {"cleanProperties":{"stack":"\"Error: connect ECONNREFUSED 127.0.0.1:3978\\n    at exports.UserBotError (<REDACTED: user-file-path>:2:1403605)\\n    at ConversationUpdateUserBotAccessor.handleAxiosError (<REDACTED: user-file-path>:2:2381454)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n    at async ConversationUpdateUserBotAccessor.sendActivity (<REDACTED: user-file-path>:2:2380716)\\n    at async ConversationUpdateUserBotAccessor.sendInstallationMemberAddedActivity (<REDACTED: user-file-path>:5:403464)\"","message":"\"connect ECONNREFUSED 127.0.0.1:3978\"","code":"\"UserBotError\""}}
+
+log InternalServiceError: connect ECONNREFUSED 127.0.0.1:3978
+    at exports.UserBotError (C:\Users\K748\.fx\bin\testTool\0.2.16\node_modules\@microsoft\teams-app-test-tool\dist\index.js:2:1403605)
+    at ConversationUpdateUserBotAccessor.handleAxiosError (C:\Users\K748\.fx\bin\testTool\0.2.16\node_modules\@microsoft\teams-app-test-tool\dist\index.js:2:2381454)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConversationUpdateUserBotAccessor.sendActivity (C:\Users\K748\.fx\bin\testTool\0.2.16\node_modules\@microsoft\teams-app-test-tool\dist\index.js:2:2380716)
+    at async ConversationUpdateUserBotAccessor.sendInstallationMemberAddedActivity (C:\Users\K748\.fx\bin\testTool\0.2.16\node_modules\@microsoft\teams-app-test-tool\dist\index.js:5:403464) {
+  code: 'UserBotError',
+  innerHttpError: undefined
+}
+debug Telemetry: agents-playground-server/sendActivity {"cleanProperties":{"activityType":"message","conversationId":"e4269908-22d8-4b68-8615-d4889a73a827","headers":"{\"x-ms-agents-playground\":\"true\"}"}}
+
